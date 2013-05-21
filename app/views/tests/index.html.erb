@@ -1,0 +1,4 @@
+<%= '/tests/ is ' + current_page?(tests_path).to_s %><br/>
+<%= '/tests/?other_param=test is ' + current_page?(tests_path(other_param: 'test')).to_s %><br/>
+<%= '/tests is ' + current_page?(trailing_slash: false).to_s %><br/>
+<%= '/tests?other_param=test is ' + current_page?(tests_path(other_param: 'test', trailing_slash: false)).to_s %><br/>
